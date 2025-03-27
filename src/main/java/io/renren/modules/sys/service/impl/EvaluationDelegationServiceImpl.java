@@ -107,14 +107,17 @@ public class EvaluationDelegationServiceImpl extends ServiceImpl<EvaluationDeleg
     public List<EvaluationDelegationEntity> getTasksByAPRId(Long userId){
         AppraiserEntity appraiserEntity = appraiserService.getOne(new QueryWrapper<AppraiserEntity>().eq("user_id",userId));
         String reportList = appraiserEntity.getReportList(); // 例如 "2,3,5,"
-        String[] idArray = reportList.split(","); // 分割为 ["2", "3", "5", ""]
         List<Long> taskIds = new ArrayList<>();
-        for (String idStr : idArray) {
-            if (!idStr.trim().isEmpty()) { // 过滤空字符串
-                try {
-                    taskIds.add(Long.parseLong(idStr.trim())); // 转换为 Long 类型
-                } catch (NumberFormatException e) {
-                    // 可选：记录日志，忽略无效 ID
+        if(reportList != null){
+            String[] idArray = reportList.split(","); // 分割为 ["2", "3", "5", ""]
+
+            for (String idStr : idArray) {
+                if (!idStr.trim().isEmpty()) { // 过滤空字符串
+                    try {
+                        taskIds.add(Long.parseLong(idStr.trim())); // 转换为 Long 类型
+                    } catch (NumberFormatException e) {
+                        // 可选：记录日志，忽略无效 ID
+                    }
                 }
             }
         }
