@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.sys.dao.PriceWeatherDataDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.sys.entity.PriceWeatherDataEntity" id="priceWeatherDataMap">
+        <result property="createDate" column="create_date"/>
+        <result property="price" column="price"/>
+        <result property="lowestTemperature" column="lowest_temperature"/>
+        <result property="highestTemperature" column="highest_temperature"/>
+        <result property="weather" column="weather"/>
+        <result property="wind" column="wind"/>
+        <result property="airQuality" column="air_quality"/>
+        <result property="simplifiedWeather" column="simplified_weather"/>
+        <result property="averageTemperature" column="average_temperature"/>
+    </resultMap>
+
+
+</mapper>
