@@ -205,8 +205,8 @@ public class EvaluationDelegationController extends AbstractController{
             entity.setStatus(4);
             AppraiserEntity appraiserEntity = appraiserService.getOne(new QueryWrapper<AppraiserEntity>().eq("user_id",userId));
             if (appraiserEntity != null && appraiserEntity.getReportList() != null) {
-                String reportList = appraiserEntity.getReportList(); // 例如 "2,3,5,"
-                String idToRemove = id + ","; // 要删除的字符串，例如 "5,"
+                String reportList = appraiserEntity.getReportList();
+                String idToRemove = id + ",";
                 if (reportList.contains(idToRemove)) {
                     String updatedReportList = reportList.replace(idToRemove, "");
                     appraiserEntity.setReportList(updatedReportList);

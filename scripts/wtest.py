@@ -3,6 +3,12 @@ import json
 from bs4 import BeautifulSoup
 import mysql.connector 
 import re
+from datetime import datetime
+
+# 请求头
+headers = {
+    
+}
 
 # 数据库配置
 db_config = {
@@ -96,10 +102,15 @@ headers = {
 
 # 获取最新日期
 last_date = get_last_date_in_weather()
-
+print(f"最新日期: {last_date}")
+# 获取当前日期（使用系统默认时区）
+current_date = datetime.now()
+# 获取月份（整数形式，1-12）
+month = current_date.month 
+print(f"当前月份: {month}")
 # 循环获取数据（从2025年到2024年，月份从12到1）
-for i in range(2025, 2024, -1):  # 注意：当前范围不会有循环，因为2025 > 2024
-    for j in range(12, 0, -1):
+for i in range(2025, 2024, -1):  
+    for j in range(month, 0, -1):
         params = {
             'areaInfo[areaId]': '60930',  # 目标地区ID
             'areaInfo[areaType]': '2',    # 地区类型

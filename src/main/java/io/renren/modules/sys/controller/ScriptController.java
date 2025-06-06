@@ -22,7 +22,7 @@ public class ScriptController {
     private String scriptPath;
 
     @GetMapping("/run-scripts")
-    @Scheduled(cron = "0 0 6 * * ?")
+    @Scheduled(cron = "0 57 15 * * ?")
     public String runPythonScripts() {
         logger.info("开始执行Python脚本...");
         try {

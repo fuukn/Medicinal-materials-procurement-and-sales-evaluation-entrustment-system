@@ -36,13 +36,11 @@ payload = json.dumps({
   "years": f"{last_year},{this_year}"
 })
 headers = {
-  'cookie': 'Hm_lvt_ba57c22d7489f31017e84ef9304f89ec=1740888506,1740888674,1740919720,1741240263; HMACCOUNT=357CE22B17434890; .AspNetCore.Antiforgery.ioMw_bgvklE=CfDJ8OSR8LMt_fFCnvleLBelZ6h5f9Oxg40qrlm1FV3VKV7osxdOzPPkIojBA007ElDgGLTKHrj17Ebc7to3HU9rgT1pcShgLM8p4ofp4xEnAy_C9e8FxM__dv__A9qBKqlpCn8WimfRw31_JRjnp8eI6uw; FromsAuthByDbCookie_zytd_Edwin.PrvGuest=1c1uuuuuuuuuuaI7S9UV5SU16UUW185RS1c4aa19bRc69a859Vd0o5qqnc78ca99o698qac9nadmoll5moad015; ZyctdAuthToken=a4272d9c8d8d47029dc53ac565592fad; zyctd.auther=CfDJ8OSR8LMt_fFCnvleLBelZ6imPOpdH_Fh2ZQsIuph5spiijbHZweoXVfAZ51Vpv1vvwFAb_nTVXMeT88h4-CsP3gA_jW6DIz3HcxLRN25kmoDe_zVsCPOC_yOUqiCIpU6jkG4n1d-BLSptXO8dgA8uiO61AQ5UKbu8pHzeGJcdeDTdLRAmmQgp7cGOQAgh8dzwrWTPUXS8U-AfHNvQ9CguCF5MzGqNK1l3azCXg6IMQX0k7-X_NGFYV4IKfQqrBPw8CWevUaJu54dmMqb7IQkwGAuIU3ufnOzhIrwN3kILwhgowN1CN_TCPuD5pjQ-5zTTUScBn3NSxm7-ZWfvQjZJrJP1CbZX5bruCdMCVoai_w2w5MNG2WQ7QmuYDX89baASsm9ZClxd8aI974K0Tpff9isfy9wcYUZV3jzIJJr4YOZikR-wi8ZMsA6_WIVe5Q2hGk-ZEDD_JteR8P4oQMsqvEfvdTv9Z9y5S2CSw8HDyAzOEWPJmEnTDHcbyeeiVUbOPMt60-xQeK59ZW1L2MEwNd40I5gLSPcVOsL3Oo6lmjNdQaeWaD8shBJ02KocDBqvj6FenwEEidO1syaX64uLF0QiuGduziIMZSqBlMguyXgiMu62BiSLy1vVwP2i90gnBOOI6PzfTkLJH7IPgxnQX8ofKasQzeCpHE17pm-c23Xf_cXO3JD-qYbVCendULvgwPJxp8qqVl6HGvgYMKQ_MPhfPXMZYgaVCi3YStIEHpwo9syKPZ6wYiZ24dG__eFVgoEzSKIBolz2I-82WLOemdlL5tZZabD5zgFaOOXzAYdE5mVUs77riOfIPVp8wihauIu8Y8JRQCVcAXICU48QXpzq64K9nJ4JxT81Swa5NNl; Hm_lpvt_ba57c22d7489f31017e84ef9304f89ec=1741242619',
   'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
   'accept': 'application/json',
   'plat_id': '1001',
   'host': 'www.zyctd.com',
   'referer': 'https://www.zyctd.com/data/price.html?id=102&type=1',
-  'Token': 'a4272d9c8d8d47029dc53ac565592fad',
   'Content-Type': 'application/json'
 }
 
